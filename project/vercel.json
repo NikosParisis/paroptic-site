@@ -2,8 +2,10 @@
     "build": {
       "command": "npm run build"
     },
-    "rewrites": [
-      { "source": "/(.*)", "destination": "/index.html" }
+    "outputDirectory": "dist",
+    "cleanUrls": true,
+    "redirects": [
+      { "source": "/(.*)", "destination": "/index.html", "statusCode": 200 }
     ]
   }
   
