@@ -1,7 +1,6 @@
 {
     "build": {
-      "command": "npm run build",
-      "outputDirectory": "dist"
+      "command": "npm run build"
     },
     "routes": [
       { "src": "/(.*)", "dest": "/index.html" }
