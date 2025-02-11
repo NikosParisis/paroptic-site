@@ -3,8 +3,11 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: './',  // <-- Εδώ πρέπει να είναι "./" για να βρίσκει τα assets
+  base: './',
   build: {
-    outDir: 'dist'
+    outDir: 'dist',
+    rollupOptions: {
+      input: 'index.html'  // Διασφαλίζει ότι το index.html θα συμπεριληφθεί στο build
+    }
   }
 });
