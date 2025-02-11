@@ -3,6 +3,7 @@ import { Phone, Mail, Network, Building2, Users2, Wrench, CheckCircle2, Award, C
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Logo from './components/Logo';
+import optikesImage from "../assets/optikes.jpg";
 
 function App() {
   return (
@@ -68,7 +69,7 @@ function App() {
               icon={<Network className="w-8 h-8" />}
               title="Εγκατάσταση Οπτικών Ινών"
               description="Επαγγελματική εγκατάσταση δικτύων οπτικών ινών με τα υψηλότερα πρότυπα ποιότητας."
-              image="optikes.jpg"
+              image={optikesImage}
               features={[
                 "Μελέτη και σχεδιασμός δικτύου",
                 "Εγκατάσταση καλωδίων",
