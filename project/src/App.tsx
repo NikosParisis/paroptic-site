@@ -3,33 +3,41 @@ import { Phone, Mail, Network, Building2, Users2, Wrench, CheckCircle2, Award, C
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Logo from './components/Logo';
-import optikesImage from "../assets/optikes.jpg";
+
 
 function App() {
   return (
     <div className="min-h-screen bg-slate-50">
       <Navbar />
       
-      {/* Hero Section */}
-      <section className="relative h-[600px] flex items-center justify-center">
-        <div className="absolute inset-0 z-0">
+     {/* Hero Section */}
+     <div className="relative bg-gray-900 h-screen">
+        <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1551818567-d9a3b4a60f9f?auto=format&fit=crop&q=80"
-            alt="Οπτικές Ίνες"
-            className="w-full h-full object-cover"
+            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
+            className="w-full h-full object-cover opacity-40"
+            alt="Fiber optic background"
           />
-          <div className="absolute inset-0 bg-black/50" />
         </div>
-        <div className="relative z-10 text-center text-white px-4">
-          <div className="flex justify-center mb-6">
-            <Logo className="text-white transform scale-150" />
+        <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8 h-full flex items-center">
+          <div className="text-center">
+            <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-8">
+              ParOptic
+            </h1>
+            <p className="mt-6 text-xl text-gray-300 max-w-3xl mx-auto">
+              Ειδικοί στην εγκατάσταση οπτικών ινών
+            </p>
+            <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+              <a href="#contact" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+                Επικοινωνήστε μαζί μας
+              </a>
+              <a href="#services" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-600 font-bold py-3 px-8 rounded-lg transition duration-300">
+                Οι Υπηρεσίες μας
+              </a>
+            </div>
           </div>
-          <p className="text-xl mb-8">Ειδικοί στην εγκατάσταση οπτικών ινών</p>
-          <a href="#contact" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-colors">
-            Επικοινωνήστε μαζί μας
-          </a>
         </div>
-      </section>
+      </div>
 
       {/* Why Choose Us Section */}
       <section className="py-16 bg-white">
@@ -69,7 +77,7 @@ function App() {
               icon={<Network className="w-8 h-8" />}
               title="Εγκατάσταση Οπτικών Ινών"
               description="Επαγγελματική εγκατάσταση δικτύων οπτικών ινών με τα υψηλότερα πρότυπα ποιότητας."
-              image={optikesImage}
+              image="https://images.unsplash.com/photo-1562408590-e32931084e23?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
               features={[
                 "Μελέτη και σχεδιασμός δικτύου",
                 "Εγκατάσταση καλωδίων",
@@ -81,7 +89,7 @@ function App() {
               icon={<Building2 className="w-8 h-8" />}
               title="Δίκτυα Κτιρίων"
               description="Σχεδιασμός και υλοποίηση δικτύων οπτικών ινών για επαγγελματικούς χώρους και κτίρια."
-              image="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80"
+              image="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
               features={[
                 "Εσωτερική καλωδίωση",
                 "Εγκατάσταση patch panels",
