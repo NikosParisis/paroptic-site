@@ -77,7 +77,7 @@ function App() {
               icon={<Network className="w-8 h-8" />}
               title="Εγκατάσταση Οπτικών Ινών"
               description="Επαγγελματική εγκατάσταση δικτύων οπτικών ινών με τα υψηλότερα πρότυπα ποιότητας."
-              image="https://images.unsplash.com/photo-1562408590-e32931084e23?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+              image="https://paroptic.gr/optikes.jpg"
               features={[
                 "Μελέτη και σχεδιασμός δικτύου",
                 "Εγκατάσταση καλωδίων",
